@@ -1,21 +1,36 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package podeentrarnafesta;
 
-/**
- *
- * @author Aluno
- */
-public class PodeEntrarNaFesta {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+// Classe principal
+public class PodeEntrarNaFesta {
+    // Método principal (programa que será executado)
+    public static void main (String[] args) {
+        // Declaração de variável 
+        int idade;
+        // Atribuir um valor a variável idade 
+        idade = 17;
+        // Mostrar na tela
+        System.out.println("Minha idade é "+idade); 
+        // Aumentar a idade        idade = 18;
+        // Mostrar na tela 
+        System.out.println("Minha idade é "+idade);
+        // Acrescenta 1 a idade  
+        idade = idade + 1;
+        idade = idade + 1;  
+        // Mostrar na tela 
+        System.out.println("Minha idade é " + idade);
+        // Criar variavel para salvar a resposta 
+        String resposta; 
+        resposta = podeEntrarNaFesta(idade);
+        // Mostrar na tela 
+        System.out.println("Pode entrar na festa? " + resposta);
+    }       
+    // Método/função  
+    static String podeEntrarNaFesta (int idade_da_pessoa) { 
+        if (idade_da_pessoa >= 18) {
+            return "Sim";      
+        }        else {    
+            return "Não";     
+        }    
     }
-    
 }
